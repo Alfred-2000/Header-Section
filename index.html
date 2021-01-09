@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        img
+        {
+            max-width: 100%;
+            height: 35px;
+        }
+        #about-me
+        {
+            height: 100vh;
+            background: url(images/space.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .overlay-about-me
+        {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .my-views
+        {
+            text-align: center;   
+            font-weight: bold;
+            width: min(85%, 1024px);
+            padding: 10em 0 5em 0;
+            color: blanchedalmond;
+            margin: 0 auto ;
+        }
+        .my-views p
+        {
+            text-align: justify;
+        }
+        .social-media
+        {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0 auto;
+            width: min(75%, 989px);       
+        }
+        @media(min-width: 769px)
+        {
+            #about-me
+            {
+                background: url(images/cycling.jpg);
+            }
+            .content-about-me
+            {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                padding: 10em 0;
+            }
+            .my-views
+            {
+                padding: 0;
+                margin: 0;
+                width: 50%;
+            }
+            .social-media
+            {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0 2em; 
+                width: auto;   
+            }
+        }
+        @media(min-width: 989px)
+        {
+            .content-about-me
+            {
+                padding: 15em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="about-me">
+        <div class="overlay-about-me">
+           <div class="content-about-me">
+                <div class="my-views">             
+                    <h2>
+                        Hi! 👋<br> I'm Alfred P, 
+                    </h2> 
+                    <h3>
+                        an Electronics and Communication Engineer
+                    </h3>
+                    <p>
+                        An Electronics Engineer turned web developer passionate about leveraging my technical    background to break down challenging problems and create delighful and scalable user experiences.A recent graduate of Anna University with Bachelor's program.
+                    </p> 
+                </div> 
+                <ul class="social-media">
+                    <li>
+                        <a href="https://www.linkedin.com/in/alfred-p-878028169/">
+                            <img src="images/linkedin.png" alt="linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://join.skype.com/invite/pqOm1aiWXXYv">
+                            <img src="images/skype.png" alt="skype">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Alfred1003">
+                            <img src="images/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Alfred_10032000">
+                            <img src="images/twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/alfred_1003/">
+                            <img src="images/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                </ul>
+           </div>
+        </div>
+    </header>  
+</body>
+</html>
